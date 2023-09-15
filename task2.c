@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <conio.h>
+
 main()
 {
-	int var1, var2;
-	printf("var1 = ");
-	scanf_s("%d", &var1);
-	printf("var2 = ");
-	scanf_s("%d", &var2); 
-	var1 = var1 + var2;
-	var2 = var1 - var2;
-	var1 = var1 - var2;
-	printf("%d %d ", var1, var2);
+    int number1 = 0;
+    int number2 = 0;
+    printf("Enter the 1st number: ");
+    scanf_s("%d", &number1);
+    printf("Enter the 2nd number: ");
+    scanf_s("%d", &number2); 
+    number1 = number1 + number2;
+    number2 = number1 - number2;
+    number1 = number1 - number2;
+    printf("The 1st number is %d, the 2nd number is %d ", number1, number2);
 }
