@@ -7,7 +7,7 @@
 int parenthesisBalance(char string[])
 {
     int count = 0;
-    int stringLength = strlen(string);
+    const stringLength = strlen(string);
     for (int i = 0; i < stringLength; i++)
     {
         if (string[i] == '(')
