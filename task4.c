@@ -2,31 +2,31 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+
 #define LENGTH 100
 
-int main()
+int happyTicketsCount() 
 {
     int sums[28] = { 0 };
-    for (int i = 0; i < 1000; i++) 
+    for (int i = 0; i < 10; i++) 
     {
-        int digit1 = i % 10;
-        int digit2 = 0;
-        int digit3 = 0;
-        if (i >= 10) 
+        for (int j = 0; j < 10; ++j) 
         {
-            digit2 = i / 10;
+            for (int k = 0; k < 10; ++k) 
+            {
+                ++sums[i + j + k];
+            }
         }
-        if (i >= 100) 
-        {
-            digit3 = i / 100;
-            digit2 = i / 10 % 10;
-        }
-        sums[digit1 + digit2 + digit3] += 1;
     }
     int happyTickets = 0;
     for (int i = 0; i < 28; i++) 
     {
         happyTickets += sums[i] * sums[i];
     }
-    printf("%d", happyTickets);
+    return happyTickets;
+}
+
+int main()
+{
+    printf("The amount of happy tickets is %d", happyTicketsCount());
 }
