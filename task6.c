@@ -36,5 +36,6 @@ int main()
     int number = 0;
     printf("number = ");
     scanf_s("%d", &number);
+    printf("Prime numbers up to %d:\n", number);
     primeNumbers(number);
 }
