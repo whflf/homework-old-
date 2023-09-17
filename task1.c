@@ -6,8 +6,7 @@ int main(void)
     int length = 0;
     printf("length = ");
     scanf_s("%d", &length);
-    int* numbers;
-    numbers = (int*)malloc(length * sizeof(int));
+    int *numbers = (int*)malloc(length * sizeof(int));
     for (int i = 0; i < length; i++)
     {
         printf("numbers[%d] = ", i);
@@ -21,6 +20,7 @@ int main(void)
             amountOfZeroes += 1;
         }
     }
-    printf("%d ", amountOfZeroes);
+    printf("The amount of zero elements in the array is %d ", amountOfZeroes);
     return 0;
+    free(numbers);
 }
