@@ -1,36 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define LENGTH 100
 
-int main()
+int parenthesisBalance(char string[])
 {
-    char string[LENGTH];
-    printf("string = ");
-    fgets(string, LENGTH, stdin);
     int count = 0;
-    for (int i = 0; i < strlen(string); i++)
+    int stringLength = strlen(string);
+    for (int i = 0; i < stringLength; i++)
     {
         if (string[i] == '(')
         {
-            count += 1;
+            ++count;
         }
         if (string[i] == ')')
         {
-            count -= 1;
+            --count;
             if (count < 0)
             {
                 break;
             }
         }
     }
-    if (count == 0) 
+    if (count == 0)
     {
-        printf("ok");
+        return 1;
     }
-    else 
+    else
     {
-        printf("not ok");
+        return 0;
     }
+}
+
+int main()
+{
+    char string[LENGTH] = { '\0' };
+    printf("string = ");
+    fgets(string, LENGTH, stdin);
+    printf("%s", parenthesisBalance(string) ? "ok" : "not ok");
     return 0;
 }
