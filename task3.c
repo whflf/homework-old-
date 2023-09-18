@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-main()
+int main()
 {
     int number1 = 0;
     int number2 = 0;
@@ -9,11 +9,12 @@ main()
     scanf_s("%d", &number1);
     printf("number2 = ");
     scanf_s("%d", &number2);
+    int dividend = number1;
     int answer = 0;
-    bool flag = false;
+    bool minusFlag = false;
     if (number1 < 0 ^ number2 < 0)
     {
-        flag = true;
+        minusFlag = true;
     }
     if (number2 == 0)
     {
@@ -33,9 +34,9 @@ main()
         number1 -= number2;
         answer += 1;
     }
-    if (flag == true)
+    if (minusFlag == true)
     {
-        answer = -answer;
+        answer = -answer - 1;
     }
-    printf("%d / %d = %d", number1, number2, answer);
+    printf("%d / %d = %d", dividend, number2, answer);
 }
