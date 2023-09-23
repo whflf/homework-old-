@@ -21,6 +21,5 @@ int main(void)
         }
     }
     printf("The amount of zero elements in the array is %d ", amountOfZeroes);
-    return 0;
     free(numbers);
 }
