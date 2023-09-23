@@ -3,32 +3,18 @@
 #include <stdbool.h>
 #include <math.h>
 
-int primeNumbers(int number)
+int primeNumber(int number)
 {
-    for (int i = 0; i < number + 1; ++i) 
+    int divisors = 0;
+    for (int j = 2; j * j < number + 1; ++j)
     {
-        if (i > 1) 
+        if (number % j == 0)
         {
-            bool primeNumber = true;
-            int divisors = 0;
-            for (int j = 2; j * j < i + 1; ++j) 
-            {
-                if (i % j == 0) 
-                {
-                    ++divisors;
-                    break;
-                }
-            }
-        if (divisors) 
-        {
-            primeNumber = false;
-        }
-            if (primeNumber) 
-            {
-                printf("%d\n", i);
-            }
+            ++divisors;
+            break;
         }
     }
+    return (divisors == 0);
 }
 
 int main()
@@ -37,5 +23,15 @@ int main()
     printf("number = ");
     scanf_s("%d", &number);
     printf("Prime numbers up to %d:\n", number);
-    primeNumbers(number);
+    if (number < 2) 
+    {
+        printf("no numbers");
+    }
+    for (int i = 2; i < number + 1; ++i) 
+    {
+        if (primeNumber(i))
+        {
+            printf("%d\n", i);
+        }
+    }
 }
