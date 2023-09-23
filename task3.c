@@ -34,7 +34,7 @@ int main()
         number1 -= number2;
         answer += 1;
     }
-    if (minusFlag == true)
+    if (minusFlag)
     {
         answer = -answer - 1;
     }
