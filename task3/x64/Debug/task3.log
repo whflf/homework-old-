@@ -1,4 +1,0 @@
-﻿  task3.c
-C:\Users\Eleno\RepoDemo\Homework2\task3\task3.c(42,36): warning C4474: "scanf_s" : для строки формата передано слишком много аргументов
-C:\Users\Eleno\RepoDemo\Homework2\task3\task3.c(42,36): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 2
-  task3.vcxproj -> C:\Users\Eleno\RepoDemo\Homework2\task3\x64\Debug\task3.exe
