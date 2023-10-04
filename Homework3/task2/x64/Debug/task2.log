@@ -1,0 +1,5 @@
+﻿  task2.c
+C:\Users\Eleno\homework\Homework3\task2\task2.c(20,15): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Eleno\homework\Homework3\task2\task2.c(22,84): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Eleno\homework\Homework3\task2\task2.c(86,47): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  task2.vcxproj -> C:\Users\Eleno\homework\Homework3\task2\x64\Debug\task2.exe
