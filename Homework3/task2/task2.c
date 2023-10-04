@@ -58,6 +58,11 @@ bool testIncorrectCase()
 }
 
 int main() {
+    if (!testCorrectCase() || !testIncorrectCase()) {
+        printf("~ Tests failed");
+        return -1;
+    }
+
     int n = 0;
     int k = 0;
 
@@ -86,7 +91,7 @@ int main() {
         int key = ((double)rand() / RAND_MAX) * 50;
         int index = binarySearch(numbers, 0, n - 1, key);
         if (index > -1) {
-            printf("%d has an index of %d\n", key, index + 1);
+            printf("%d is in the array\n", key);
         }
         else {
             printf("%d is not in the array\n", key);
