@@ -32,7 +32,7 @@ void printMostOccurredElement(int numbers[], int size) {
     int currentCount = 1;
     int maxCount = 1;
 
-    for (int i = 1; i < size; i++) { 
+    for (int i = 1; i < size; ++i) { 
         
         if (numbers[i] == currentElement) { 
             ++currentCount; 
