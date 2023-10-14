@@ -1,9 +1,11 @@
 ﻿  task1.c
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,17): warning C4477: "scanf_s": в строке форматирования "%c" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "char **"
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,17): message : этот аргумент используется описателем преобразования
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,17): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,17): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,17): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,17): message : этот аргумент используется в качестве размера буфера
-C:\Users\Eleno\homework\Homework3\task1\task1.c(12,57): warning C4047: !=: "char *" отличается по уровням косвенного обращения от "int"
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,17): warning C4477: "scanf_s": в строке форматирования "%c" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "char **"
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,17): message : этот аргумент используется описателем преобразования
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,17): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,17): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,17): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%c"
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,17): message : этот аргумент используется в качестве размера буфера
+C:\Users\Eleno\homework\Homework3\task1\task1.c(13,57): warning C4047: !=: "char *" отличается по уровням косвенного обращения от "int"
+C:\Users\Eleno\homework\Homework3\task1\task1.c(80,9): warning C4013: memcmp: нет определения; предполагается "extern" с возвратом типа "int"
+  LINK : не найден или не выполнена сборка C:\Users\Eleno\homework\Homework3\task1\x64\Debug\task1.exe при последней инкрементной компоновке; выполняется полная компоновка
   task1.vcxproj -> C:\Users\Eleno\homework\Homework3\task1\x64\Debug\task1.exe
